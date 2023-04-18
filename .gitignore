@@ -13,7 +13,7 @@ import time
 
 # Define the login function
 def login(username, password,element):
-    driver = webdriver.Chrome("C:/Users/Be2Seeuser/Downloads/chromedriver_win32 (2)/chromedriver.exe")
+    driver = webdriver.Chrome("chromedriver.exe")
     driver.get("https://sso.afeka.ac.il/my.policy")
 
     username_input = driver.find_element(By.CLASS_NAME, "credentials_input_text")
@@ -74,17 +74,17 @@ def login(username, password,element):
 window = tk.Tk()
 window.title("Login")
 
-# Add the welcome label
+
 label = tk.Label(window, text="Please enter your username and password:")
 label.pack()
 
-# Add the username input and label
+username input and label
 username_label = tk.Label(window, text="Username:")
 username_label.pack()
 username_input = tk.Entry(window)
 username_input.pack()
 
-# Add the password input and label
+password input and label
 password_label = tk.Label(window, text="Password:")
 password_label.pack()
 password_input = tk.Entry(window, show="*")
@@ -103,7 +103,7 @@ element_input.pack()
 
 
 
-# Add the login button
+login button
 def on_login_button_click():
     username = username_input.get()
     password = password_input.get()
